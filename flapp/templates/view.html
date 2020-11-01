@@ -2,11 +2,30 @@
 <html>  
 <head>  
     <title>List</title>  
+    <style>
+    body{
+         width: 80%;
+         margin: Auto;
+         font-size: 30px;
+         padding-top: 30px;
+         background-color: 	#808080;
+    }
+    #t1{
+        font-size: 30px;
+        background: #808080;
+        color: #fff;
+        border: 1px solid black;
+          margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    }
+    
+    </style>
 </head>  
 <body>  
   
 <h3>Student Information</h3>  
-<table border=5>  
+<table border=5 id="t1">  
     <thead>  
         <td>ID</td>  
         <td>Name</td>  
@@ -16,7 +35,7 @@
       
     {% for row in rows %}  
       
-        <tr>  
+        <tr id='t2'>  
             <td>{{row["id"]}}</td>  
             <td>{{row["name"]}}</td>  
             <td>{{row["email"]}}</td>  
