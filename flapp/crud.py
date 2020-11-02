@@ -51,7 +51,7 @@ def updateDetails():
                 msg = "Student successfully Updated"  
         except:  
             con.rollback()  
-            msg = "We can not add the students to the list"  
+            msg = "We can not add the student to the list"  
         finally:  
             return render_template("success.html",msg = msg)  
             con.close()   
